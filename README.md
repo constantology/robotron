@@ -26,6 +26,10 @@ to view available API versions: `http://localhost:3001/api`
 
 to view available API endpoints for the stable API version: `http://localhost:3001/api/stable`
 
+again, i didn't go crazy trying to comment the test, I would prefer to either walk you through my test answer or — prefereably — the current project I'm working on.
+
+## credits, where due
+
 all `su-*` modules are part of an open source [API framework](http://github.com/super-useful) myself and my colleage [@jeffwad](http://github.com/jeffwad) designed, developed and are using within our current role.
 
 all `useful-*` modules are libraries I've written and open sourced under my organisation [muigui](http://github.com/muigui).
