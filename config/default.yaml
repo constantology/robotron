@@ -1,0 +1,58 @@
+debug: true
+app:
+  port: 3001
+  global_request_timeout: 3600000
+  global_session_timeout: 604800000
+log:
+  customlevels:
+    ERROR: 1
+    INFO: 1
+    LOG: 1
+    WARN: 1
+  path: "logs"
+apis:
+  base: "/api"
+  releases:
+    stable: "v0.0.1"
+  health: "/service/healthcheck"
+date:
+  lang: 'en-gb'
+  start_of_week: 1
+enum:
+  compass_cardinal_points:
+    - E
+    - N
+    - S
+    - W
+  instructions:
+    - L
+    - M
+    - R
+# made each error an associative array
+# in case we want to add anything more like
+# default messages/data/content-type
+errors:
+  400:
+    id: BadRequest
+    message: 'Bad Request.'
+  401:
+    id: Unauthorized
+    message: 'Invalid Arena.'
+  403:
+    id: Forbidden
+    message: 'You cannot access the requested Arena.'
+  419:
+    id: AuthenticationTimeOut
+    message: 'This Arena no longer exists.'
+  408:
+    id: RequestTimeout
+    message: 'Request Timeout.'
+  500:
+    id: InternalServer
+    message: 'Internal Server Error.'
+  501:
+    id: NotImplemented
+    message: 'This service has not yet been implemented.'
+  503:
+    id: ServiceUnavailable
+    message: 'This service is currently not available.'

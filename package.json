@@ -1,0 +1,56 @@
+{
+    "author" : {
+        "Christos Constandinou" : "constantology@gmail.com"
+    },
+    "name" : "robotwars",
+    "version" : "0.0.1",
+    "description" : "robot wars node.js test",
+    "main" : "index.js",
+    "private" : true,
+    "engines" : {
+        "node" : ">= 0.11.x"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git@github.com:constantology/robotron.git"
+    },
+    "scripts" : {
+        "test" : "export NODE_ENV='test' && node --harmony --harmony_typeof ./node_modules/.bin/mocha --colors --harmony --harmony_typeof --recursive -R spec --ui tdd ./test/**/*.test.js",
+        "start" : "node --harmony --harmony_typeof index.js"
+    },
+    "license" : "ISC",
+    "dependencies" : {
+        "co" : "3.1.x",
+        "co-defer" : "0.1.x",
+        "co-fs" : "^1.2.0",
+        "co-request" : "0.2.x",
+        "co-sleep" : "0.0.x",
+        "co-thunkify" : "git+ssh://git@github.com:super-useful/co-thunkify.git",
+        "config" : "0.4.x",
+        "js-yaml" : "3.2.x",
+        "moment-timezone" : "0.2.x",
+        "require-all" : "0.0.x",
+        "shelljs" : "0.3.x",
+        "su-apiserver" : "git+ssh://git@github.com:super-useful/su-apiserver.git",
+        "su-apisession" : "git+ssh://git@github.com:super-useful/su-apisession.git#v0.1.0",
+        "su-define-object" : "git+ssh://git@github.com:super-useful/su-define-object.git",
+        "su-healthcheck" : "git+ssh://git@github.com:super-useful/su-healthcheck.git",
+        "su-q" : "git+ssh://git@github.com:super-useful/su-q.git",
+        "su-validate-type" : "git+ssh://git@github.com:super-useful/su-validate-type.git",
+        "super-func" : "x",
+        "super-iter" : "git+ssh://git@github.com:ibrokethat/iter.git#v0.1.0",
+        "thunkify" : "2.1.2",
+        "useful-copy" : "x",
+        "useful-string" : "x",
+        "useful-value" : "x",
+        "yaml" : "0.2.x"
+    },
+    "devDependencies" : {
+        "chai" : "1.9.x",
+        "mocha" : "1.21.x",
+        "rewire" : "2.1.x",
+        "sinon" : "1.10.x",
+        "sinon-chai" : "2.5.x",
+        "supertest" : "0.13.x"
+    }
+}
